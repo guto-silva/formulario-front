@@ -1,0 +1,9 @@
+#cadastro-produto{
+    width: 800px;
+    margin: 20px auto;
+}
+
+.form-label{
+    margin-top: 10px;
+    font-weight: 700;
+}

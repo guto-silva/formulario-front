@@ -1,0 +1,26 @@
+<div id="cadastro-produto">
+    <form>
+        <div class="mb-3">
+            <label for="formTituloFilme" class="form-label">Título</label>
+            <input type="text" class="form-control" id="formTituloFilme" [(ngModel)]="filme.titulo" name="titulo" placeholder="Título do filme" required>
+    
+            <label for="formSubtituloFilme" class="form-label">Subtítulo</label>
+            <input type="text" class="form-control" id="formSubtituloFilme" [(ngModel)]="filme.subtitulo" name="subtitulo" placeholder="Subtítulo do filme">
+
+            <label for="formImagemFilme" class="form-label">Endereço da Imagem</label>
+            <input type="text" class="form-control" id="formImagemFilme" [(ngModel)]="filme.enderecoImagem" name="enderecoImagem" placeholder="URL da imagem" required>
+        
+            <label for="formTrailerFilme" class="form-label">Trailer</label>
+            <input type="text" class="form-control" id="formTrailerFilme" [(ngModel)]="filme.trailer" name="trailer" placeholder="URL do trailer">
+    
+            <label for="formDataLancamentoFilme" class="form-label">Ano de Lançamento</label>
+            <input type="text" class="form-control" id="formDataLancamentoFilme" [(ngModel)]="filme.dataLancamento" name="dataLancamento" placeholder="Another input placeholder">
+
+            <label for="formSinopseFilme" class="form-label">Sinopse</label>
+            <textarea type="text" rows="7" class="form-control sinopse-text" id="formSinopseFilme" [(ngModel)]="filme.sinopse" name="sinopse" placeholder="Escreva a sinopse aqui!" required></textarea>
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button" (click)="cadastrarFilme()">Cadastrar filme</button>
+        </div>
+    </form>
+</div>
