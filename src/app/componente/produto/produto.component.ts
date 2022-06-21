@@ -21,13 +21,6 @@ export class ProdutoComponent implements OnInit {
   }
 
   cadastrarFilme(){
-     /*  this.filme.titulo = "Angular";
-      this.filme.subtitulo = "Um desafio";
-      this.filme.enderecoImagem = "http://angular.com.br/angular.png";
-      this.filme.dataLancamento = "2022";
-      this.filme.sinopse = "Quebrando a cabeça para conseguir fazer uma requisição POST corretamente no Angular.";
-      this.filme.trailer = "http://youtubeeee.com/angular"; */
-
       console.log(this.filme);
 
       this.produtoService.cadastrarFilme(this.filme).subscribe(
