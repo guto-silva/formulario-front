@@ -26,17 +26,13 @@ export class ProdutoComponent implements OnInit {
   }
 
   cadastrarFilme(){
-      console.log(this.filme);
-
       this.produtoService.cadastrarFilme(this.filme).subscribe(
-        (resposta: Produto) => {alert("Filme cadastrado com sucesso")}
-      );
+        { next: () => alert("Filme cadastrado com sucesso"),
+          complete: () => this.reload()
+        });
   }
 
-  excluirPorId(){
-    this.produtoService.excluirFilmePorId(this.filme.id).subscribe(
-      (resposta: any) => {alert("Filme excluído com sucesso")} 
-    );
+  reload(){
+    window.location.reload();
   }
-
 }

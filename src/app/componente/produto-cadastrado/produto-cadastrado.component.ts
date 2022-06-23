@@ -21,6 +21,12 @@ export class ProdutoCadastradoComponent implements OnInit {
 
   excluir(id: any){
     this.produtoService.excluirFilmePorId(id).subscribe();
+    alert("Filme excluído com sucesso!");
+    this.reload();
+  }
+
+  reload(){
+    window.location.reload();
   }
 
 }
