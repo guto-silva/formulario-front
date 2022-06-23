@@ -1,4 +1,5 @@
 export class Produto {
+                  id;
     /* private */ titulo;
     /* private */ subtitulo;
     /* private */ enderecoImagem;
@@ -6,7 +7,8 @@ export class Produto {
     /* private */ sinopse;
     /* private */ trailer;
 
-    constructor(titulo?: string, subtitulo?: string, enderecoImagem?: string, dataLancamento?: string, sinopse?: string, trailer?: string){
+    constructor(id?: string, titulo?: string, subtitulo?: string, enderecoImagem?: string, dataLancamento?: string, sinopse?: string, trailer?: string){
+        this.id = id;
         this.titulo = titulo;
         this.subtitulo = subtitulo;
         this.enderecoImagem = enderecoImagem;

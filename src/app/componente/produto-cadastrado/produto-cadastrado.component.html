@@ -1,0 +1,13 @@
+<section class="conteudo" *ngFor="let ITEM of filme">
+      
+      <p><strong>ID:</strong> {{ITEM.id}}</p>
+      <p><strong>TÍTULO:</strong> {{ITEM.titulo}}</p>  
+      <p><strong>SUBTÍTULO:</strong> {{ITEM.subtitulo}}</p>
+      <p><strong>IMAGEM:</strong> {{ITEM.enderecoImagem}}</p>    
+      <p><strong>TRAILER:</strong> {{ITEM.trailer}}</p>   
+      <p><strong>ANO DE LANÇAMENTO:</strong> {{ITEM.dataLancamento}}</p>    
+      <p><strong>SINOPSE:</strong> {{ITEM.sinopse}}</p>       
+      <button type="button" class="btn btn-primary btn-sm editar" >Editar</button>
+      <button type="button" class="btn btn-primary btn-sm excluir" (click)="excluir(ITEM.id)">Excluir</button>
+      <hr>
+</section>

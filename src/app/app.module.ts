@@ -6,13 +6,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProdutoComponent } from './componente/produto/produto.component';
+import { CabecalhoComponent } from './componente/cabecalho/cabecalho.component';
+import { ProdutoCadastradoComponent } from './componente/produto-cadastrado/produto-cadastrado.component';
+import { CorpoComponent } from './componente/corpo/corpo.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    CabecalhoComponent,
+    ProdutoCadastradoComponent,
+    CorpoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 <div id="cadastro-produto">
+    <h1 class="texto-titulo">CADASTRO DE PRODUTOS</h1>
     <form>
         <div class="mb-3">
             <label for="formTituloFilme" class="form-label">Título</label>
@@ -14,7 +15,7 @@
             <input type="text" class="form-control" id="formTrailerFilme" [(ngModel)]="filme.trailer" name="trailer" placeholder="URL do trailer">
     
             <label for="formDataLancamentoFilme" class="form-label">Ano de Lançamento</label>
-            <input type="text" class="form-control" id="formDataLancamentoFilme" [(ngModel)]="filme.dataLancamento" name="dataLancamento" placeholder="Another input placeholder">
+            <input type="text" class="form-control" id="formDataLancamentoFilme" [(ngModel)]="filme.dataLancamento" name="dataLancamento" placeholder="Ano de Lançamento">
 
             <label for="formSinopseFilme" class="form-label">Sinopse</label>
             <textarea type="text" rows="7" class="form-control sinopse-text" id="formSinopseFilme" [(ngModel)]="filme.sinopse" name="sinopse" placeholder="Escreva a sinopse aqui!" required></textarea>
