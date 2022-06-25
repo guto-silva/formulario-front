@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Produto } from 'src/app/model/produto';
 import { ProdutoService } from 'src/app/service/produto.service';
 
@@ -11,7 +12,7 @@ export class ProdutoCadastradoComponent implements OnInit {
 
   filme: Produto[] = []
 
-  constructor(private produtoService: ProdutoService) { }
+  constructor(private router: Router, private produtoService: ProdutoService) { }
 
   ngOnInit(): void {
     this.produtoService.recuperarFilmes().subscribe(

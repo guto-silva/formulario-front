@@ -9,6 +9,7 @@ import { ProdutoComponent } from './componente/produto/produto.component';
 import { CabecalhoComponent } from './componente/cabecalho/cabecalho.component';
 import { ProdutoCadastradoComponent } from './componente/produto-cadastrado/produto-cadastrado.component';
 import { CorpoComponent } from './componente/corpo/corpo.component';
+import { LoginComponent } from './componente/login/login.component';
 
 
 
@@ -18,7 +19,8 @@ import { CorpoComponent } from './componente/corpo/corpo.component';
     ProdutoComponent,
     CabecalhoComponent,
     ProdutoCadastradoComponent,
-    CorpoComponent
+    CorpoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

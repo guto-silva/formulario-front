@@ -28,6 +28,7 @@ export class ProdutoComponent implements OnInit {
   cadastrarFilme(){
       this.produtoService.cadastrarFilme(this.filme).subscribe(
         { next: () => alert("Filme cadastrado com sucesso"),
+          error: (e) => alert("Ops! Algo deu errado!"+ JSON.stringify(e)),
           complete: () => this.reload()
         });
   }

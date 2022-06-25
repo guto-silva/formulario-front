@@ -17,6 +17,36 @@
             <label for="formDataLancamentoFilme" class="form-label">Ano de Lançamento</label>
             <input type="text" class="form-control" id="formDataLancamentoFilme" [(ngModel)]="filme.dataLancamento" name="dataLancamento" placeholder="Ano de Lançamento">
 
+            <label for="formCategoriaFilme" class="form-label">Categoria</label>
+            <input type="text" class="form-control" id="formCategoriaFilme" [(ngModel)]="filme.categoria" name="categoria" placeholder="Categoria">
+
+            <label for="formDuracaoFilme" class="form-label">Tempo de Duração</label>
+            <input type="text" class="form-control" id="formDuracaoFilme" [(ngModel)]="filme.duracao" name="duracao" placeholder="90 minutos">
+
+            <label for="formFornecedorFilme" class="form-label">Fornecedor</label>
+            <input type="text" class="form-control" id="formFornecedorFilme" [(ngModel)]="filme.fornecedor" name="fornecedor" placeholder="Fornecedor">
+
+            <label for="formCnpj" class="form-label">CNPJ</label>
+            <input type="text" class="form-control" id="formCnpj" [(ngModel)]="filme.cnpj" name="cnpj" placeholder="CNPJ">
+
+            <label for="formCusto" class="form-label">Preço de compra</label>
+            <input type="text" class="form-control" id="formCusto" [(ngModel)]="filme.custo" name="custo" placeholder="R$ de compra">
+
+            <label for="formValorVenda" class="form-label">Preço de Venda</label>
+            <input type="text" class="form-control" id="formValorVenda" [(ngModel)]="filme.valorVenda" name="valorVenda" placeholder="R$ de venda">
+
+            <label for="formQuantidade" class="form-label">Quantidade</label>
+            <input type="text" class="form-control" id="formQuantidade" [(ngModel)]="filme.quantidade" name="quantidade" placeholder="Quantidade">
+
+            <label for="formDiretor" class="form-label">Diretor</label>
+            <input type="text" class="form-control" id="formDiretor" [(ngModel)]="filme.direcao" name="diretor" placeholder="Nome do diretor do filme">
+
+            <label for="formElenco" class="form-label">Elenco</label>
+            <input type="text" class="form-control" id="formElenco" [(ngModel)]="filme.elenco" name="elenco" placeholder="Elenco do filme">
+
+            <label for="formDimensoes" class="form-label">Dimensões do produto</label>
+            <input type="text" class="form-control" id="formDimensoes" [(ngModel)]="filme.dimensoes" name="dimensoes" placeholder="Largura, altura e peso">
+
             <label for="formSinopseFilme" class="form-label">Sinopse</label>
             <textarea type="text" rows="7" class="form-control sinopse-text" id="formSinopseFilme" [(ngModel)]="filme.sinopse" name="sinopse" placeholder="Escreva a sinopse aqui!" required></textarea>
         </div>

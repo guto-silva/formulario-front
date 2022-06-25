@@ -1,0 +1,13 @@
+<section class="login">
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Usuário</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="usuario.username">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="formGroupExampleInput2" [(ngModel)]="usuario.senha">
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button" (click)="autenticar()">Entrar</button>
+        </div>
+</section>
