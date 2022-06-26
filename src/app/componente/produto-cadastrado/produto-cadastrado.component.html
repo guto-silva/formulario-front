@@ -5,7 +5,7 @@
       <p><strong>IMAGEM:</strong> {{ITEM.enderecoImagem}}</p>    
       <p><strong>TRAILER:</strong> {{ITEM.trailer}}</p>   
       <p><strong>ANO DE LANÇAMENTO:</strong> {{ITEM.dataLancamento}}</p>
-      <p><strong>CATEGORIA:</strong> {{ITEM.categoria}}</p>
+      <p><strong>CATEGORIA:</strong> {{ITEM.categoria}}</p>     
       <p><strong>TEMPO DE DURAÇÃO:</strong> {{ITEM.duracao}}</p>
       <p><strong>FORNECEDOR:</strong> {{ITEM.fornecedor}}</p>
       <p><strong>CNPJ:</strong> {{ITEM.cnpj}}</p>
@@ -14,7 +14,7 @@
       <p><strong>QUANTIDADE:</strong> {{ITEM.quantidade}}</p>
       <p><strong>DIREÇÃO:</strong> {{ITEM.direcao}}</p>
       <p><strong>ELENCO:</strong> {{ITEM.elenco}}</p>
-      <p><strong>DIMENSÕES DO PRODUTO:</strong> {{ITEM.dimensoes}}</p>
+      <p><strong>DIMENSÕES DO PRODUTO:</strong> Largura({{ITEM.dimensoes?.largura}}), altura({{ITEM.dimensoes?.altura}}) e peso({{ITEM.dimensoes?.peso}})</p>
       <p><strong>SINOPSE:</strong> {{ITEM.sinopse}}</p>       
       <button type="button" class="btn btn-primary btn-sm editar" >Editar</button>
       <button type="button" class="btn btn-primary btn-sm excluir" (click)="excluir(ITEM.id)">Excluir</button>

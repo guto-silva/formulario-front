@@ -10,14 +10,17 @@ import { ProdutoService } from 'src/app/service/produto.service';
 })
 export class ProdutoCadastradoComponent implements OnInit {
 
-  filme: Produto[] = []
+  filme: Produto[] = [];
 
-  constructor(private router: Router, private produtoService: ProdutoService) { }
+  constructor(private router: Router, private produtoService: ProdutoService) {
+   
+  }
 
   ngOnInit(): void {
     this.produtoService.recuperarFilmes().subscribe(
-      (res: Produto[]) => {this.filme = res}
+      (res: Produto[]) => {console.log(this.filme = res)}
     );
+
   }
 
   excluir(id: any){

@@ -1,3 +1,6 @@
+import { Dimensoes } from "./dimensoes";
+
+
 export class Produto {
     public id;
     public titulo;
@@ -17,7 +20,7 @@ export class Produto {
     public elenco;
     public dimensoes;
 
-    constructor(id?: string, titulo?: string, subtitulo?: string, enderecoImagem?: string, dataLancamento?: string, categoria?: string, duracao?: string, sinopse?: string, trailer?: string, fornecedor?: string, cnpj?: string, custo?: number, valorVenda?: number, quantidade?: number, direcao?: string, elenco?: string, dimensoes?: number){
+    constructor(id?: string, titulo?: string, subtitulo?: string, enderecoImagem?: string, dataLancamento?: string, categoria?: string, duracao?: string, sinopse?: string, trailer?: string, fornecedor?: string, cnpj?: string, custo?: number, valorVenda?: number, quantidade?: number, direcao?: string, elenco?: string, dimensoes?: Dimensoes){
         this.id = id;
         this.titulo = titulo;
         this.subtitulo = subtitulo;

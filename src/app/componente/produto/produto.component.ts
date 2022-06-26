@@ -11,8 +11,6 @@ import { ProdutoService } from 'src/app/service/produto.service';
 export class ProdutoComponent implements OnInit {
  
   public filme: Produto = new Produto();
-  
-  
 
   constructor(private produtoService: ProdutoService, private router: Router) {
     

@@ -1,0 +1,24 @@
+<form class="d-flex pesquisar">
+    <input class="form-control me-2" type="text" placeholder="Buscar filme por categoria" aria-label="Search" [(ngModel)]="categoria" name="categoria">
+    <button class="btn btn-outline-success" type="submit" (click)="pesquisar()">Pesquisar</button>
+  </form>
+<section class="conteudo" *ngFor="let ITEM of filme">
+    <p><strong>ID:</strong> {{ITEM.id}}</p>
+    <p><strong>TÍTULO:</strong> {{ITEM.titulo}}</p>  
+    <p><strong>SUBTÍTULO:</strong> {{ITEM.subtitulo}}</p>
+    <p><strong>IMAGEM:</strong> {{ITEM.enderecoImagem}}</p>    
+    <p><strong>TRAILER:</strong> {{ITEM.trailer}}</p>   
+    <p><strong>ANO DE LANÇAMENTO:</strong> {{ITEM.dataLancamento}}</p>
+    <p><strong>CATEGORIA:</strong> {{ITEM.categoria}}</p>     
+    <p><strong>TEMPO DE DURAÇÃO:</strong> {{ITEM.duracao}}</p>
+    <p><strong>FORNECEDOR:</strong> {{ITEM.fornecedor}}</p>
+    <p><strong>CNPJ:</strong> {{ITEM.cnpj}}</p>
+    <p><strong>PREÇO DE CUSTO:</strong> {{ITEM.custo | currency: 'BRL'}}</p>
+    <p><strong>PREÇO DE VENDA:</strong> {{ITEM.valorVenda | currency: 'BRL'}}</p>
+    <p><strong>QUANTIDADE:</strong> {{ITEM.quantidade}}</p>
+    <p><strong>DIREÇÃO:</strong> {{ITEM.direcao}}</p>
+    <p><strong>ELENCO:</strong> {{ITEM.elenco}}</p>
+    <p><strong>DIMENSÕES DO PRODUTO:</strong> Largura({{ITEM.dimensoes?.largura}}), altura({{ITEM.dimensoes?.altura}}) e peso({{ITEM.dimensoes?.peso}})</p>
+    <p><strong>SINOPSE:</strong> {{ITEM.sinopse}}</p>       
+    <hr>
+</section>

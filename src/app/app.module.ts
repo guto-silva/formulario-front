@@ -10,6 +10,7 @@ import { CabecalhoComponent } from './componente/cabecalho/cabecalho.component';
 import { ProdutoCadastradoComponent } from './componente/produto-cadastrado/produto-cadastrado.component';
 import { CorpoComponent } from './componente/corpo/corpo.component';
 import { LoginComponent } from './componente/login/login.component';
+import { ProdutoPorCategoriaComponent } from './componente/produto-por-categoria/produto-por-categoria.component';
 
 
 
@@ -20,7 +21,8 @@ import { LoginComponent } from './componente/login/login.component';
     CabecalhoComponent,
     ProdutoCadastradoComponent,
     CorpoComponent,
-    LoginComponent
+    LoginComponent,
+    ProdutoPorCategoriaComponent
   ],
   imports: [
     BrowserModule,
