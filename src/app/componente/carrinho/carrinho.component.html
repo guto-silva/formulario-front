@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>Seu carrinho</h3>
+        </div>
+    </div>
+    <div class="row" *ngIf="vazio == true">
+        <div class="col-12 text-center">
+            <h3>Seu carrinho está vazio!</h3>
+        </div>
+    </div>
+    <div id="itens" *ngIf="vazio == false">
+        <div class="row">
+            <div class="col-12">
+                <h3>Valor total: {{pedido.valorTotal | currency: 'BRL'}}</h3>
+            </div>
+        </div>
+        <div class="row" *ngFor="let ITEM of pedido.itensPedido">
+            <div class="col-12">
+                <img src="{{ITEM.produto?.enderecoImagem}}" alt="" width="150px">
+            </div>
+            <div class="col-12">
+                <h5>{{ITEM.produto?.titulo}}</h5>
+                <h6>{{ITEM.produto?.subtitulo}}</h6>
+            </div>
+            <div class="col-12">
+                <p><strong>Quantidade: {{ITEM.quantidadePedido}}</strong></p>
+            </div>
+            <div class="col-12">
+                <p><strong>Preço unitário: {{ITEM.produto?.valorVenda | currency: 'BRL'}}</strong></p>
+            </div>
+            <div class="col-12">
+                <p><strong>Preço total: {{ITEM.valorTotal | currency: 'BRL'}} </strong></p>
+            </div>
+        </div>
+    </div>
+</div>

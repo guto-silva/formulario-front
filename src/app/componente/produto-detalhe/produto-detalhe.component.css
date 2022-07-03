@@ -1,0 +1,33 @@
+.detalhe{
+    margin-top: 50px;
+}
+.img{
+    margin: 0 auto;
+}
+
+.form-control{
+    margin: 0 auto;
+}
+
+.detalhe img{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.detalhe h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+}
+
+.detalhe h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+.add-carrinho{
+    margin: 10px;
+}
+
+#formQuantidade{
+    width: 100px;
+}

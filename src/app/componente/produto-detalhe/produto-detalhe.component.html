@@ -1,0 +1,17 @@
+<div *ngIf="filme" class="detalhe container text-center">
+        <h1>{{filme.titulo}}</h1>  
+        <h2>{{filme.subtitulo}}</h2>
+        <img class="img" src="{{filme.enderecoImagem}}" alt="">
+        <input type="number" class="form-control text-center" id="formQuantidade" [(ngModel)]="quantidadePedido" name="quantidadePedido" min="1" max="{{filme.quantidade}}">
+        <button type="button" class="btn btn-primary btn-sm add-carrinho text-center" (click)="adicionarCarrinho()" >Adicionar ao carrinho</button>
+        <p><strong>TRAILER:</strong> {{filme.trailer}}</p>   
+        <p><strong>ANO DE LANÇAMENTO:</strong> {{filme.dataLancamento}}</p>
+        <p><strong>CATEGORIA:</strong> {{filme.categoria}}</p>     
+        <p><strong>TEMPO DE DURAÇÃO:</strong> {{filme.duracao}}</p>
+        <p><strong>PREÇO DE VENDA:</strong> {{filme.valorVenda | currency: 'BRL'}}</p>
+        <p><strong>DIREÇÃO:</strong> {{filme.direcao}}</p>
+        <p><strong>ELENCO:</strong> {{filme.elenco}}</p>
+        <p><strong>DIMENSÕES DO PRODUTO:</strong> Largura({{filme.dimensoes?.largura}}), altura({{filme.dimensoes?.altura}}) e peso({{filme.dimensoes?.peso}})</p>
+        <p><strong>SINOPSE:</strong> {{filme.sinopse}}</p>      
+        <hr>
+</div>

@@ -1,7 +1,8 @@
 <form class="d-flex pesquisar">
     <input class="form-control me-2" type="text" placeholder="Buscar filme por categoria" aria-label="Search" [(ngModel)]="categoria" name="categoria">
     <button class="btn btn-outline-success" type="submit" (click)="pesquisar()">Pesquisar</button>
-  </form>
+</form>
+<div *ngIf="filme">
 <section class="conteudo" *ngFor="let ITEM of filme">
     <p><strong>ID:</strong> {{ITEM.id}}</p>
     <p><strong>TÍTULO:</strong> {{ITEM.titulo}}</p>  
@@ -19,6 +20,8 @@
     <p><strong>DIREÇÃO:</strong> {{ITEM.direcao}}</p>
     <p><strong>ELENCO:</strong> {{ITEM.elenco}}</p>
     <p><strong>DIMENSÕES DO PRODUTO:</strong> Largura({{ITEM.dimensoes?.largura}}), altura({{ITEM.dimensoes?.altura}}) e peso({{ITEM.dimensoes?.peso}})</p>
-    <p><strong>SINOPSE:</strong> {{ITEM.sinopse}}</p>       
+    <p><strong>SINOPSE:</strong> {{ITEM.sinopse}}</p>
+    <a [routerLink]="['produto-detalhe/',ITEM.id]" class="btn btn-primary btn-sm detalhe">Detalhe</a>       
     <hr>
 </section>
+</div>

@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Produto } from '../model/produto';
 
-const apiUrl: string = 'http://localhost:8080/produtos';
+const apiUrl: string = 'https://retroflix.herokuapp.com/produtos';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +18,10 @@ export class ProdutoService {
 
   public recuperarFilmesPorCategoria(categoria: string): Observable<Produto[]>{
     return this.http.get<Produto[]>(`${apiUrl}/${categoria}`);
+  }
+
+  public recuperarFilmesPorId(id: string): Observable<Produto>{
+    return this.http.get<Produto>(`${apiUrl}/id/${id}`);
   }
 
   public cadastrarFilme(produto: Produto): Observable<Produto>{

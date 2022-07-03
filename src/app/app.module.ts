@@ -11,6 +11,8 @@ import { ProdutoCadastradoComponent } from './componente/produto-cadastrado/prod
 import { CorpoComponent } from './componente/corpo/corpo.component';
 import { LoginComponent } from './componente/login/login.component';
 import { ProdutoPorCategoriaComponent } from './componente/produto-por-categoria/produto-por-categoria.component';
+import { ProdutoDetalheComponent } from './componente/produto-detalhe/produto-detalhe.component';
+import { CarrinhoComponent } from './componente/carrinho/carrinho.component';
 
 
 
@@ -22,7 +24,9 @@ import { ProdutoPorCategoriaComponent } from './componente/produto-por-categoria
     ProdutoCadastradoComponent,
     CorpoComponent,
     LoginComponent,
-    ProdutoPorCategoriaComponent
+    ProdutoPorCategoriaComponent,
+    ProdutoDetalheComponent,
+    CarrinhoComponent
   ],
   imports: [
     BrowserModule,

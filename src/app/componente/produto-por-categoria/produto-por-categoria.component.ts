@@ -24,5 +24,4 @@ export class ProdutoPorCategoriaComponent implements OnInit {
         error: (e) => alert('Erro ao recuperar produto por categoria' + e)
       });
   }
-
 }
